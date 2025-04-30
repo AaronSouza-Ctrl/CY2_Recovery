@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogAaron</title>
+    <style>
+        svg {
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+        article {
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        header{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 50px;
+        }
+        nav{
+            background-color: bisque;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+        video{
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BlogAaron</h1>
+        <p>Aqui você continua informado no mundo dos games.</p>
+    </header>
+    
+    <nav>
+        <a href="../Aula01/Minha_Página.html">Contato</a>
+        <a href="">Esportes (por algum motivo)</a>
+        <a href="../Aula03/Páginas/Noticias.html">Notícias</a>
+    </nav>
+
+    <article>
+        <section class="figura">
+            <h2>Exercício com SVG</h2>
+            <svg width="300" height="300">
+                <rect x="100" y="25" width="100" height="100" fill="blue"></rect>
+                <circle r="25" cx="150" cy="160" fill="red">
+                    <animate attributeName="r" from="40" to="20" dur="0.5s" repeatCount="indefinite"></animate>
+                </circle>
+                <polygon points="150,280 100,200 200,200" fill="purple"></polygon>
+            </svg>
+        </section>
+
+        <section class="audio">
+            <h2>Exercício com áudio</h2>
+            <audio autoplay="autoplay" src="../Aula04/Mídia/very-evil-laugh-205258.mp3" controls>
+
+            </audio>
+        </section>
+
+        <section class="video">
+            <h2>Exercício com vídeo</h2>
+            <video poster="Mídia/th.jfif" src="Mídia/ctrlplay.mp4" controls></video>
+        </section>
+    </article>
+
+    <footer>Página criada pelo Aaron</footer>
+</body>
+</html>

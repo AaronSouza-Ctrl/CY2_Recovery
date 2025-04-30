@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h1{
+    background-color: aqua;
+    color: #6b6262;
+}
+h2{
+    background-color: aquamarine;
+    color: #6b6262;
+}
+p{
+    background-color: black;
+    color: #ffffff
+}

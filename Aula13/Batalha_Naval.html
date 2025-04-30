@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Naval</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #campo{
+            display: grid;
+            grid-template-columns: repeat(5, 60px);
+            gap: 10px;
+        }
+        .celula{
+            width: 60px;
+            height: 60px;
+            background-color: white;
+        }
+        .bomba{
+            background-color: red;
+        }
+        .mar{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Batalha Naval</h1>
+    <div id="campo"></div>
+
+    <script>
+        alert('\n\rBem vindo ao jogo de Batalha Naval!\r\nPrepare-se para o desafio. Você terá 3 tentativas para descobrir onde estão as bombas!');
+
+        let campo = [
+            ['mar', 'mar', 'mar', 'bomba', 'mar'],
+            ['mar', 'mar', 'bomba', 'mar', 'bomba'],
+            ['bomba', 'mar', 'mar', 'bomba', 'mar'],
+            ['mar', 'bomba', 'mar', 'mar', 'mar'],
+        ]
+
+        let tentativas = 0;
+        let campoHTML = document.getElementById('campo');
+
+        for (let i = 0; i < campo.length; i++) {
+            for (let j = 0; j < campo[i].length; j++) {
+                let celula = document.createElement('button');
+                celula.classList.add('celula');
+                
+                celula.addEventListener('click', function() {
+                    tentativas++;
+                    let tipo = campo[i][j];
+                    if (tipo == 'bomba') {
+                        celula.classList.add('bomba');
+                        celula.innerText = '💣';
+                        setTimeout(() => {
+                            alert('Você perdeu!')
+                            location.reload();
+                        }, 500);
+                    }
+                    else{
+                        celula.classList.add('mar');
+                        celula.innerText = '🚢';
+                        if(tentativas >= 3) {
+                            setTimeout(() => {
+                            alert('Você venceu!')
+                            location.reload();
+                        }, 500);
+                        }
+                        
+                    }
+                })
+                
+                campoHTML.appendChild(celula);
+            }
+        }
+    </script>
+</body>
+</html>

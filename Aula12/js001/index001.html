@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo JavaScript</title>
+</head>
+<body>
+    <h1>Minha página JavaScript</h1>
+    <h3 id="título"></h3>
+    <script>
+        document.write("<h2>Olá, Vinícios</h2>");
+
+        let gaveta = document.createElement('h2');
+        gaveta.textContent = "Olá, Giovani";
+        document.body.appendChild(gaveta);
+
+        document.getElementById('título').textContent = "Olá, Aaron"
+    </script>
+</body>
+</html>

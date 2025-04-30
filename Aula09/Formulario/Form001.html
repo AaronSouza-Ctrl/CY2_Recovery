@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formulários</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(to right, cyan, blueviolet);
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 50px;
+        }
+        section > #imagem{
+            background-image: url(login.png);
+            height: 450px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 50px;
+        }
+        section > #formulario{
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+        .campo{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <p>Bem-vindo(a). Faça login para continuar.</p>
+                <form action="cadastro.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" name="email" id="iemail" required>
+                        <label for="iemail">E-mail</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a href="">Esqueci minha senha</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

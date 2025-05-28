@@ -7,7 +7,7 @@ class Jogador{
             x : 500,
             y : 500
         };
-        this.naveSprites = this.getImage('src/assets/imagens/nave.png');
+        this.naveSprites = this.getImage("src/assets/imagens/nave.png");
         this.sx = 0;
     }
 

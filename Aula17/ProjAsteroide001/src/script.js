@@ -1,5 +1,6 @@
 import Jogador from "./classes/Jogador.js";
 import Asteroide from "./classes/Asteroide.js";
+import Estrelas from "./classes/Estrelas.js";
 
 const teclas = {
     esquerda: false,
@@ -22,6 +23,17 @@ const desenharAsteroides = () => {
         const asteroide = asteroides[i];
         asteroide.desenhar(ctx);
     }
+}
+const gerarEstrelas = () => {
+    for (let i = 0; i < 100; i++) {
+        estrelas.push(new Estrelas(canvas.width, canvas,height));
+    }
+}
+const desenharEstrelas = () => {
+    estrelas.forEach((star) => {
+        star.desenhar(ctx);
+        star.update();
+    });
 }
 
 function jogoLoop(){

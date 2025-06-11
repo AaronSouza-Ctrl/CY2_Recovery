@@ -1,3 +1,5 @@
+import Projetil from "./Projetil.js";
+
 class Jogador{
     constructor() {
         this.largura = 32*3;
@@ -7,7 +9,7 @@ class Jogador{
             x : 500,
             y : 500
         };
-        this.naveSprites = this.getImage("src/assets/imagens/Naves/Lightning.png");
+        this.naveSprites = this.getImage("src/assets/imagens/Naves/Saboteur.png");
         this.sx = 0;
         this.framesContador = 8;
     }
@@ -43,6 +45,17 @@ class Jogador{
             this.largura, this.altura,
         )
         this.update();
+    }
+
+    atirar(projeteis){
+        const p = new Projetil(
+            {
+                x: this.posicao.x + this.largura / 2 - 2,
+                y: this.posicao.y,
+            },
+            -10
+        )
+        projeteis.push(p)
     }
 
     update(){

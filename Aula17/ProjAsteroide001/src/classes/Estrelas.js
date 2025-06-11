@@ -22,7 +22,8 @@ class Estrelas{
             this.posicao.y = 0;
             this.posicao.x = Math.random() * this.canvasLargura;
             this.velocidade = (Math.random() * 0.4 + 0.1);
-        }
+        };
+        this.posicao.y += this.velocidade;
     }
 
 }

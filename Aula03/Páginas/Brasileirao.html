@@ -4,8 +4,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasileirão</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto;
+        }
+        th{
+            border: 2px solid black;
+            padding: 30px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 30px;
+            width: 100vw;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th>Posição</th>
+            <th colspan="2">Clube</th>
+            <th>Pontos</th>
+            <th>Partidas</th>
+            <th>Vitórias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+            <th>Últimas 5</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="./Imagens/Botafogo_de_Futebol_e_Regatas_logo.png" alt="Botafogo"></td>
+            <td>Botafogo</td>
+            <td>79</td>
+            <td>38</td>
+            <td>23</td>
+            <td>10</td>
+            <td>5</td>
+            <td>➖➖✔️✔️✔️</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="./Imagens/Palmeiras_logo.png" alt="Palmeiras"></td>
+            <td>Palmeiras</td>
+            <td>73</td>
+            <td>38</td>
+            <td>22</td>
+            <td>7</td>
+            <td>9</td>
+            <td>✔️✔️❌✔️❌</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="./Imagens/Flamengo_braz_logo.png" alt="Flamengo"></td>
+            <td>Flamengo</td>
+            <td>70</td>
+            <td>38</td>
+            <td>20</td>
+            <td>10</td>
+            <td>8</td>
+            <td>✔️➖✔️✔️➖</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="./Imagens/Fortaleza_EC_2018.png" alt="Fortaleza"></td>
+            <td>Fortaleza</td>
+            <td>68</td>
+            <td>38</td>
+            <td>19</td>
+            <td>11</td>
+            <td>8</td>
+            <td>➖➖❌❌✔️</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="./Imagens/SC_Internacional_Brazil_Logo.png" alt="Internacional"></td>
+            <td>Internacional</td>
+            <td>65</td>
+            <td>38</td>
+            <td>18</td>
+            <td>11</td>
+            <td>9</td>
+            <td>✔️✔️❌❌❌</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img src="./Imagens/Brasao_do_Sao_Paulo_Futebol_Clube.png" alt="São Paulo"></td>
+            <td>São Paulo</td>
+            <td>59</td>
+            <td>38</td>
+            <td>17</td>
+            <td>8</td>
+            <td>13</td>
+            <td>➖➖❌❌❌</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img src="./Imagens/Corinthians_simbolo.png" alt="Corinthians"></td>
+            <td>Corinthians</td>
+            <td>56</td>
+            <td>38</td>
+            <td>15</td>
+            <td>11</td>
+            <td>12</td>
+            <td>✔️✔️✔️✔️✔️</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img src="./Imagens/ECBahia.png" alt="Bahia"></td>
+            <td>Bahia</td>
+            <td>53</td>
+            <td>38</td>
+            <td>15</td>
+            <td>8</td>
+            <td>15</td>
+            <td>❌➖✔️❌✔️</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img src="./Imagens/Cruzeiro_Esporte_Clube_(logo).png" alt="Cruzeiro"></td>
+            <td>Cruzeiro</td>
+            <td>52</td>
+            <td>38</td>
+            <td>14</td>
+            <td>10</td>
+            <td>14</td>
+            <td>❌➖➖❌✔️</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="./Imagens/CRVascodaGama.png" alt="Vasco da Gama"></td>
+            <td>Vasco da Gama</td>
+            <td>50</td>
+            <td>38</td>
+            <td>14</td>
+            <td>8</td>
+            <td>16</td>
+            <td>❌❌➖✔️✔️</td>
+        </tr><tr>
+            <td>11</td>
+            <td><img src="./Imagens/Esporte_Clube_Vitória_logo.png" alt="EC Vitória"></td>
+            <td>EC Vitória</td>
+            <td>47</td>
+            <td>38</td>
+            <td>13</td>
+            <td>8</td>
+            <td>17</td>
+            <td>✔️➖✔️➖➖</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><img src="./Imagens/250px-Atletico_mineiro_galo.png" alt="Atlético-MG"></td>
+            <td>Atlético-MG</td>
+            <td>47</td>
+            <td>38</td>
+            <td>11</td>
+            <td>14</td>
+            <td>13</td>
+            <td>➖➖❌❌✔️</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><img src="./Imagens/FFC_crest.png" alt="Fluminense"></td>
+            <td>Fluminense</td>
+            <td>46</td>
+            <td>38</td>
+            <td>12</td>
+            <td>10</td>
+            <td>16</td>
+            <td>➖➖➖✔️✔️</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><img src="./Imagens/Gremio_logo.png" alt="Grêmio"></td>
+            <td>Grêmio</td>
+            <td>45</td>
+            <td>38</td>
+            <td>12</td>
+            <td>9</td>
+            <td>17</td>
+            <td>➖➖✔️➖❌</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><img src="./Imagens/EC_Juventude.png" alt="Juventude"></td>
+            <td>Juventude</td>
+            <td>45</td>
+            <td>38</td>
+            <td>11</td>
+            <td>12</td>
+            <td>15</td>
+            <td>➖➖✔️✔️❌</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="./Imagens/RedBullBragantino.png" alt="Bragantino"></td>
+            <td>Bragantino</td>
+            <td>44</td>
+            <td>38</td>
+            <td>10</td>
+            <td>14</td>
+            <td>14</td>
+            <td>➖❌➖✔️✔️</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="./Imagens/Athletico_Paranaense_(Logo_2019).png" alt="Athletico-PR"></td>
+            <td>Athletico-PR</td>
+            <td>42</td>
+            <td>38</td>
+            <td>11</td>
+            <td>9</td>
+            <td>18</td>
+            <td>✔️➖➖❌❌</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="./Imagens/Criciuma.png" alt="Criciúma"></td>
+            <td>Criciúma</td>
+            <td>38</td>
+            <td>38</td>
+            <td>9</td>
+            <td>11</td>
+            <td>18</td>
+            <td>❌➖❌❌❌</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="./Imagens/Atlético_Goianiense.png" alt="Atlético-G">Atlético-GO</td>
+            <td>Atlético-GO</td>
+            <td>30</td>
+            <td>38</td>
+            <td>7</td>
+            <td>9</td>
+            <td>22</td>
+            <td>❌❌➖✔️❌</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="./Imagens/CuiabáEC2020.png" alt="Cuiabá"></td>
+            <td>Cuiabá</td>
+            <td>30</td>
+            <td>38</td>
+            <td>6</td>
+            <td>12</td>
+            <td>20</td>
+            <td>❌➖❌❌❌</td>
+        </tr>
+    </table>
 </body>
 </html>
